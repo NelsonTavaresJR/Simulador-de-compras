@@ -1,9 +1,9 @@
-print("Bem vindo a empresa do camisetas do Nelson Tavares") # EXIGÊNCIA DE CÓDIGO 1
+print("Bem vindo a empresa do camisetas do Nelson Tavares")
 
-lista_funcionarios = [] # EXIGÊNCIA DE CÓDIGO 2
+lista_funcionarios = []
 id_global = 2424202
 
-def cadastrar_funcionario(id): # EXIGÊNCIA DE CÓDIGO 3
+def cadastrar_funcionario(id):#FUNÇÃO DE CADASTRO 
     print("-" * 8,"MENU CADASTRAR FUNCIONÁRIO","-" * 8)
     print(f"id: {id_global}")
     nome = input("Por favor entre com o nome do Funcionário: ")
@@ -17,10 +17,10 @@ def cadastrar_funcionario(id): # EXIGÊNCIA DE CÓDIGO 3
         "salario":salario      
     }
 
-    lista_funcionarios.append(funcionarios.copy())# EXIGÊNCIA DE CÓDIGO 7
+    lista_funcionarios.append(funcionarios.copy())
     print("Funcionário cadastrado com sucesso!")
  
-def consultar_funcionarios(): # EXIGÊNCIA DE CÓDIGO 4
+def consultar_funcionarios(): #FUNÇÃO DE CONSULTA
     while True:
         print("-" * 8,"MENU CONSULTAR FUNCIONÁRIO","-" * 8)
         print("1 - Consultar todos os funcionários")
@@ -70,7 +70,7 @@ def consultar_funcionarios(): # EXIGÊNCIA DE CÓDIGO 4
         else:
             print("Opção inválida.")
 
-def remover_funcionario(): # EXIGÊNCIA DE CÓDIGO 5
+def remover_funcionario(): #FUNÇÃO DE EXCLUSÃO DE CADASTRO
     print("-" * 8,"MENU REMOVER FUNCIONÁRIO","-" * 8)
     remover = input("Digite o Id do funcionário a ser removido: ")
     for func in lista_funcionarios:
@@ -82,7 +82,7 @@ def remover_funcionario(): # EXIGÊNCIA DE CÓDIGO 5
         
     print("Id inválido") 
 
-#-----------MENU--------------------- EXIGÊNCIA DE CÓDIGO 6 
+#-----------MENU---------------------
 while True:
     print("-" * 17,"MENU PRINCIPAL","-" * 17)
     print("Escolha a opção desejada: ")
